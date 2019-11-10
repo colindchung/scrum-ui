@@ -1,0 +1,8 @@
+{
+    "main_tb1_headers": [
+        {"title": "Backlog", "icon": 0},
+        {"title": "Sprint Board", "icon": 1},
+        {"title": "Epics", "icon": 2},
+        {"title": "Tasks", "icon": 3}
+    ]
+}
