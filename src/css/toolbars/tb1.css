@@ -2,18 +2,20 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 15%;
+    width: 15vw;
     background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    height: 90vh;
     overflow: auto;
 }
 
 .tb-1-hd li {
+    text-decoration: none;
+    font-family: Candara;
+    font-size: 100%;
     display: flex;
     color: #000;
     padding: 10%;
-    text-decoration: none;
     align-items: center;
 }
   
@@ -22,7 +24,7 @@
 }
 
 .tb-1-hd-icon {
-    width: 25px;
+    width: 15%;
     height: auto;
     padding-right: 20%;
 }
@@ -31,7 +33,8 @@
     width: 2%;
     margin-left: 15%;
     background-color: #f1f1f1;
-    height: 100vh;
+    height: 90vh;
+    position: fixed;
 }
 
 .tb-1-col:hover {

@@ -1,0 +1,30 @@
+.bk-table {
+    width: 83vw;
+    border: 1px solid black;
+}
+
+.t-head {
+
+}
+
+.t-id {
+    width: 10%;
+}
+
+.t-head {
+    height: 10%;
+}
+
+.t-row {
+    height: 10px;
+    background-color: #F8F8F8;
+    border: 1px solid black;
+}
+
+.t-row:nth-child(even) {
+    background-color: #E8E8E8;
+}
+
+.t-row:hover {
+    background-color: #C8C8C8;
+}

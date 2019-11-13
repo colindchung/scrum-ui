@@ -1,0 +1,32 @@
+#app {
+    position: fixed;
+}
+
+#top-bar {
+    width: 100vw;
+    height: 10vh;
+}
+
+#body {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+}
+
+#side-bar {
+    flex: 17;
+    height: 100%;
+}
+
+#main {
+    flex: 83;
+    height: 100%;
+}
+
+#main-header {
+    height: 15vh;
+}
+
+#board {
+    height: 5vh;
+}

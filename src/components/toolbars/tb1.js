@@ -1,4 +1,6 @@
 import React from 'react';
+
+//IMAGES
 let icon_left = require('./library/icons/icon-left-arrow.png')
 let icon_right = require('./library/icons/icon-right-arrow.png')  
 let icons = [
@@ -6,7 +8,6 @@ let icons = [
     require('./library/icons/icon-sprint.png'),
     require('./library/icons/icon-web.png'),
     require('./library/icons/icon-clipboard.png') 
-
 ]
 
 export class ToolBar1 extends React.Component {
@@ -43,13 +44,13 @@ export class ToolBar1 extends React.Component {
     }
 
     render(){
-        return (
+        return this.props.settings.display ? (
             <div className="tb-1">
-                <ul className="tb-1-hd" id="tb-1-hd">{this.renderList(this.props.items)}</ul>
+                <ul className="tb-1-hd" id="tb-1-hd">{this.renderList(this.props.settings.headers)}</ul>
                 <button onClick={() => this.toggleIcon()} className="tb-1-col" id="tb-1-col">
                     <img className="tb-1-col-icon" src={this.state.display ? icon_left : icon_right}/>
                 </button>
             </div>
-        )
+        ) : null
     }
 }
