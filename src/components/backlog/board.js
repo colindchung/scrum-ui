@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 
 export class BacklogBoard extends React.Component {
     constructor(props){
@@ -21,6 +22,13 @@ export class BacklogBoard extends React.Component {
                 assignee: 'Colin'
             },]
         }
+    }
+
+    componentDidMount(){
+        axios.get('http://localhost:4000/user/getAll')
+            .then(res => {
+                console.log(res);
+            })
     }
 
     renderTickets(tickets){
