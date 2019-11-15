@@ -1,0 +1,11 @@
+{
+    "firebaseConnection": {
+        "apiKey": "AIzaSyBwFymF84nZQPCZrm2uYLwHSa-zTLMvWdY",
+        "authDomain": "my-scrum-1766b.firebaseapp.com",
+        "databaseURL": "https://my-scrum-1766b.firebaseio.com",
+        "projectId": "my-scrum-1766b",
+        "storageBucket": "my-scrum-1766b.appspot.com",
+        "messagingSenderId": "216318768159",
+        "appId": "1:216318768159:web:a693ad82632572d851d12a"
+    }
+}
