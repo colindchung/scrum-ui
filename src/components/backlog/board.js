@@ -27,7 +27,7 @@ export class BacklogBoard extends React.Component {
     componentDidMount(){
         axios.get('http://localhost:4000/user/getAll')
             .then(res => {
-                console.log(res);
+                var data = res.data;
             })
     }
 
