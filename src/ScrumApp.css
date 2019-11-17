@@ -3,6 +3,7 @@
 /* Toolbars */
 @import './css/toolbars/tb1.css';
 @import './css/toolbars/settings.tb.css';
+@import './css/toolbars/ticket.tb.css';
 
 /* Backlog */
 @import './css/backlog/board.css';

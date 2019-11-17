@@ -5,33 +5,49 @@ import { GetAllTickets } from '../../dataAccess/ticket'
 const connect = require('../../appData/connect.json')
 const firebaseConfig = connect.firebaseConnection
 
-
 export class BacklogBoard extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            tickets: []
+            tickets: [
+                {
+                   id: 1,
+                   desc: 'Do this',
+                   pts: 5,
+                   assignee: 'Colin Chung' 
+                },{
+                    id: 2,
+                    desc: 'Do this again',
+                    pts: 13,
+                    assignee: 'Colin Chung' 
+                },{
+                    id: 3,
+                    desc: 'Do this one more time',
+                    pts: 8,
+                    assignee: 'Colin Chung' 
+                }
+            ]
         }
     }
 
     componentDidMount(){
-        var tickets = []
-        firebase.initializeApp(firebaseConfig);
-        var data = GetAllTickets();
-        console.log(data)
+        // var tickets = []
+        // firebase.initializeApp(firebaseConfig);
+        // var data = GetAllTickets();
+        // console.log(data)
 
-        data.forEach((d) => {
-            tickets.push({
-                id: d.ticketid,
-                desc: d.title,
-                pts: d.points,
-                assignee: d.assignee
-            });
-        })
+        // data.forEach((d) => {
+        //     tickets.push({
+        //         id: d.ticketid,
+        //         desc: d.title,
+        //         pts: d.points,
+        //         assignee: d.assignee
+        //     });
+        // })
 
-        this.setState({
-            tickets: tickets
-        })
+        // this.setState({
+        //     tickets: tickets
+        // })
     }
 
     renderTickets(tickets){

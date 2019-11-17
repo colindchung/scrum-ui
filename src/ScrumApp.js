@@ -2,7 +2,8 @@ import React from 'react';
 import './ScrumApp.css';
 import { ToolBar1 } from './components/toolbars/tb1'
 import { SettingsToolBar } from './components/toolbars/settings.tb'
-import { BacklogBoard } from './components/backlog/board' 
+import { Backlog } from './components/backlog/backlog' 
+import { BacklogBoard } from './components/backlog/board';
 
 const mainAppData = require('./appData/main.json')
 
@@ -18,12 +19,7 @@ class BacklogView extends React.Component {
                         <ToolBar1 settings={mainAppData.main_tb1_settings}/>
                     </div>
                     <div id="main">
-                        <div id="main-header">
-
-                        </div>
-                        <div id="board">
-                            <BacklogBoard />
-                        </div>
+                        <Backlog />
                     </div>
                 </div>
             </div>     

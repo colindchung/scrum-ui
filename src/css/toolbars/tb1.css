@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     width: 15vw;
-    background-color: #f1f1f1;
+    background-color: #F1F1F1;
     position: absolute;
     height: 90vh;
     overflow: auto;
@@ -32,7 +32,7 @@
 .tb-1-col {
     width: 2%;
     margin-left: 15%;
-    background-color: #f1f1f1;
+    background-color: #F1F1F1;
     height: 90vh;
     position: fixed;
 }
