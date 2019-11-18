@@ -8,10 +8,14 @@ export class TicketsToolbar extends React.Component {
         }
     }
 
+    setActive(e){
+        console.log(e.target.id)
+    }
+
     getTickets(tickets){
-        return tickets.map(t => 
-            <li>{t}</li>
-        )
+        return tickets.map(function(t, i) {
+            return <li className="ticket-tb-li" id={'t'+i}>{t}</li>
+        })
     }
 
     render() {

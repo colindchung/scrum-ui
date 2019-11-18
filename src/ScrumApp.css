@@ -8,6 +8,9 @@
 /* Backlog */
 @import './css/backlog/board.css';
 
+/* Ticket */
+@import './css/ticket/ticket.css';
+
 /* CSS */
 
 body {

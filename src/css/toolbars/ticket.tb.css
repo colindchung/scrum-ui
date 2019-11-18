@@ -1,23 +1,29 @@
 .ticket-tb {
     width: 100%;
+    height: 2%;
 }
 
 .ticket-tb-ul {
     list-style: none;
 }
 
-.ticket-tb-ul li {
+.ticket-tb-li {
     float: left;
     text-align: center;
-    width: 10%;
-    margin: 0px 3px;
+    width: 15%;
+    margin: 0px 1px;
     color: #000000;
     background-color: #F1F1F1;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
-.ticket-tb-ul li:hover {
+.ticket-tb-li:hover {
+    color: #FFFFFF;
+    background-color: #888888;
+}
+
+.active {
     color: #FFFFFF;
     background-color: #888888;
 }

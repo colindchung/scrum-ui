@@ -11,17 +11,17 @@ export class BacklogBoard extends React.Component {
         this.state = {
             tickets: [
                 {
-                   id: 1,
+                   id: 'SC-1',
                    desc: 'Do this',
                    pts: 5,
                    assignee: 'Colin Chung' 
                 },{
-                    id: 2,
+                    id: 'SC-2',
                     desc: 'Do this again',
                     pts: 13,
                     assignee: 'Colin Chung' 
                 },{
-                    id: 3,
+                    id: 'SC-3',
                     desc: 'Do this one more time',
                     pts: 8,
                     assignee: 'Colin Chung' 
