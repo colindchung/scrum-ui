@@ -1,4 +1,5 @@
 @import './css/layout.css';
+@import './css/color.themes.css';
 
 /* Toolbars */
 @import './css/toolbars/tb1.css';

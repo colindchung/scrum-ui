@@ -1,6 +1,6 @@
 .bk-table {
     width: 83vw;
-    border: 1px solid black;
+    border: 1px solid var(--primary-text);
 }
 
 .t-head {
@@ -17,14 +17,14 @@
 
 .t-row {
     height: 10px;
-    background-color: #F8F8F8;
-    border: 1px solid black;
+    background-color: var(--main-table-odd);
+    border: 1px solid var(--primary-border);
 }
 
 .t-row:nth-child(even) {
-    background-color: #E8E8E8;
+    background-color: var(--main-table-even);
 }
 
 .t-row:hover {
-    background-color: #C8C8C8;
+    background-color: var(--main-table-hover);
 }

@@ -1,7 +1,7 @@
 .tb-2 {
     width: 100vw;
     height: 10vh;
-    background-color: #909090;
+    background-color: var(--st-tb);
     display: flex;
     align-items: center;
 }

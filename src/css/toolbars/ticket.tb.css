@@ -12,18 +12,18 @@
     text-align: center;
     width: 15%;
     margin: 0px 1px;
-    color: #000000;
-    background-color: #F1F1F1;
+    color: var(--primary-text);
+    background-color: var(--main-tb);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .ticket-tb-li:hover {
-    color: #FFFFFF;
-    background-color: #888888;
+    color: var(--primary-text-hover);
+    background-color: var(--tk-tb-hover);
 }
 
 .active {
-    color: #FFFFFF;
-    background-color: #888888;
+    color: var(--primary-text-hover);
+    background-color: var(--tk-tb-hover);
 }
