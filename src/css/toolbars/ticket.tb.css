@@ -1,3 +1,7 @@
+.bk-table {
+    border: 1px solid var(--primary-border)
+}
+
 .ticket-tb {
     width: 100%;
     height: 2%;
@@ -26,4 +30,8 @@
 .active {
     color: var(--primary-text-hover);
     background-color: var(--tk-tb-hover);
+}
+
+.t-row td, .t-head td {
+    color: var(--main-table-text)
 }

@@ -1,10 +1,6 @@
 .bk-table {
     width: 83vw;
-    border: 1px solid var(--primary-text);
-}
-
-.t-head {
-
+    border: 1px solid var(--primary-border);
 }
 
 .t-id {
@@ -27,4 +23,8 @@
 
 .t-row:hover {
     background-color: var(--main-table-hover);
+}
+
+.t-row td, .t-head td {
+    color: var(--main-table-text)
 }

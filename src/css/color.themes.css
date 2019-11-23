@@ -1,4 +1,41 @@
+/* :root {
+    --bk: #505050;
+
+    --main-tb: #303030;
+    --main-tb-hover: #444444;
+    --st-tb: #151515;
+    --tk-tb: #F1F1F1;
+    --tk-tb-hover: #444444;
+
+    --main-table-odd: #3B3B3B;
+    --main-table-even: #3B3B3B;
+    --main-table-hover: #3F3F3F;
+    --main-table-text: #AFDDDE;
+
+    --primary-text: #AFDDDE;
+    --primary-text-hover: #AFDDDE;
+    --primary-border: #000000;
+} */
+
 :root {
+    --bk: #FFFFFF;
+
+    --main-tb: #F1F1F1;
+    --main-tb-hover: #D3D3D3;
+    --st-tb: #909090;
+    --tk-tb: #F1F1F1;
+    --tk-tb-hover: #888888;
+
+    --main-table-odd: #F8F8F8;
+    --main-table-even: #E8E8E8;
+    --main-table-hover: #C8C8C8;
+
+    --primary-text: #000000;
+    --primary-text-hover: #FFFFFF;
+    --primary-border: #000000;
+} */ */
+
+[data-theme="dark"] {
     --main-tb: #F1F1F1;
     --main-tb-hover: #D3D3D3;
     --st-tb: #909090;
