@@ -31,7 +31,3 @@
     color: var(--primary-text-hover);
     background-color: var(--tk-tb-hover);
 }
-
-.t-row td, .t-head td {
-    color: var(--main-table-text)
-}

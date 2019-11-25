@@ -1,6 +1,12 @@
+.bk-main {
+    width: 100%;
+    height: 100%;
+}
+
 .bk-table {
     width: 83vw;
-    border: 1px solid var(--primary-border);
+    border-bottom: 1px solid var(--bk);
+
 }
 
 .t-id {

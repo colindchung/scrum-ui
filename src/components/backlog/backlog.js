@@ -6,7 +6,7 @@ import { TicketsToolbar } from '../toolbars/ticket.tb'
 export class Backlog extends React.Component {
     render(){
         return (
-            <div>
+            <div className="bk">
                 <TicketsToolbar />
                 <BacklogBoard />
             </div>
