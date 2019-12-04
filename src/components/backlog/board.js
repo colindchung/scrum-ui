@@ -1,6 +1,5 @@
-import React from 'react'
-import firebase from 'firebase'
-import { GetAllTickets } from '../../dataAccess/ticket'
+import React from 'react';
+import axios from 'axios';
 
 const connect = require('../../appData/connect.json')
 const firebaseConfig = connect.firebaseConnection
@@ -9,45 +8,30 @@ export class BacklogBoard extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            tickets: [
-                {
-                   id: 'SC-1',
-                   desc: 'Do this',
-                   pts: 5,
-                   assignee: 'Colin Chung' 
-                },{
-                    id: 'SC-2',
-                    desc: 'Do this again',
-                    pts: 13,
-                    assignee: 'Colin Chung' 
-                },{
-                    id: 'SC-3',
-                    desc: 'Do this one more time',
-                    pts: 8,
-                    assignee: 'Colin Chung' 
-                }
-            ]
+            tickets: []
         }
     }
 
     componentDidMount(){
-        // var tickets = []
-        // firebase.initializeApp(firebaseConfig);
-        // var data = GetAllTickets();
-        // console.log(data)
+        axios.get("https://localhost:44392/ticket/getAll")
+            .then(res => {
+                var data = [];
+                
+                res.data.forEach(t => {
+                    var curr = {
+                        id: t.id,
+                        desc: t.description,
+                        pts: t.points,
+                        assignee: t.assignee
+                    };
+                    
+                    data.push(curr);
+                });
 
-        // data.forEach((d) => {
-        //     tickets.push({
-        //         id: d.ticketid,
-        //         desc: d.title,
-        //         pts: d.points,
-        //         assignee: d.assignee
-        //     });
-        // })
-
-        // this.setState({
-        //     tickets: tickets
-        // })
+                this.setState({
+                    tickets: data
+                })
+            })
     }
 
     renderTickets(tickets){
